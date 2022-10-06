@@ -1,5 +1,6 @@
 package com.example.guiilan.starwars.contract.model;
 
+import com.example.guiilan.starwars.integration.model.PeopleResponse;
 import com.example.guiilan.starwars.integration.model.PlanetResponse;
 import lombok.*;
 
@@ -9,8 +10,6 @@ import lombok.*;
 @NoArgsConstructor
 @AllArgsConstructor
 public class ContractResponse {
-    private String name;
-    private String mass;
-    private String birthYear;
+    private PeopleResponse people;
     private PlanetResponse planet;
 }

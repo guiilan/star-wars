@@ -12,8 +12,8 @@ public class PeopleContractFacede {
 
     private final PeopleImplFacede peopleImplFacede;
 
-    public Mono<ContractResponse> findPeopleById(Integer id){
-        return peopleImplFacede.peopleResult(id , id);
+    public Mono<ContractResponse> findPeopleById(Integer id) {
+        return peopleImplFacede.peopleResult(id, id);
     }
 
 }

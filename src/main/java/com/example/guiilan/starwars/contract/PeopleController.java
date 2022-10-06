@@ -15,7 +15,7 @@ public class PeopleController {
     private final PeopleContractFacede peopleContractFacede;
 
     @GetMapping("/{id}")
-    public Mono<ContractResponse> findPeopleById(@PathVariable(name = "id") Integer id){
+    public Mono<ContractResponse> findPeopleById(@PathVariable(name = "id") Integer id) {
         return peopleContractFacede.findPeopleById(id);
     }
 

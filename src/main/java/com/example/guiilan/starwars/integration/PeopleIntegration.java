@@ -16,7 +16,7 @@ public class PeopleIntegration {
         webClient = builder.baseUrl("https://swapi.dev/api/").build();
     }
 
-    public Mono<PeopleResponse> findPeopleById(Integer id){
+    public Mono<PeopleResponse> findPeopleById(Integer id) {
         return webClient
                 .get()
                 .uri("people/" + id)
@@ -26,7 +26,7 @@ public class PeopleIntegration {
                 .onErrorResume(Mono::error);
     }
 
-    public Mono<PlanetResponse> findPlanetById(Integer id){
+    public Mono<PlanetResponse> findPlanetById(Integer id) {
         return webClient
                 .get()
                 .uri("planets/" + id)
