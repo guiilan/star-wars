@@ -1,4 +1,4 @@
-package com.example.guiilan.starwars.impl.mapper;
+package com.example.guiilan.starwars.contract.mapper;
 
 import com.example.guiilan.starwars.contract.model.ContractResponse;
 import com.example.guiilan.starwars.integration.people.model.PeopleResponse;
@@ -9,7 +9,7 @@ import lombok.NoArgsConstructor;
 import java.util.Optional;
 
 @NoArgsConstructor(access = AccessLevel.PRIVATE)
-public class PeopleMapper {
+public class ContractMapper {
 
     public static ContractResponse mapperToResult(PeopleResponse people, PlanetResponse planet) {
         return Optional.ofNullable(people)
