@@ -1,4 +1,4 @@
-package com.example.guiilan.starwars.integration.model;
+package com.example.guiilan.starwars.integration.planet.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

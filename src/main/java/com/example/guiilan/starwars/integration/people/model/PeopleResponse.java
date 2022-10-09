@@ -1,4 +1,4 @@
-package com.example.guiilan.starwars.integration.model;
+package com.example.guiilan.starwars.integration.people.model;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.AllArgsConstructor;

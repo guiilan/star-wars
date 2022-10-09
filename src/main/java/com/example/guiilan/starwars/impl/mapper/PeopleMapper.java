@@ -1,8 +1,8 @@
 package com.example.guiilan.starwars.impl.mapper;
 
 import com.example.guiilan.starwars.contract.model.ContractResponse;
-import com.example.guiilan.starwars.integration.model.PeopleResponse;
-import com.example.guiilan.starwars.integration.model.PlanetResponse;
+import com.example.guiilan.starwars.integration.people.model.PeopleResponse;
+import com.example.guiilan.starwars.integration.planet.model.PlanetResponse;
 import lombok.AccessLevel;
 import lombok.NoArgsConstructor;
 
