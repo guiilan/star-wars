@@ -12,11 +12,11 @@ import reactor.core.publisher.Mono;
 @RequestMapping("/webclient")
 @AllArgsConstructor
 public class ContractController {
-    private final ContractFacede peopleContractFacede;
+    private final ContractFacade peopleContractFacade;
 
     @GetMapping("/{id}")
     public Mono<ContractResponse> findPeopleById(@PathVariable(name = "id") Integer id) {
-        return peopleContractFacede.contractResult(id);
+        return peopleContractFacade.contractResult(id);
     }
 
 }

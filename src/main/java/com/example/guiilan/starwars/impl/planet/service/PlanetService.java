@@ -13,7 +13,7 @@ public class PlanetService {
     private final PlanetIntegration planetIntegration;
 
 
-    public Mono<PlanetResponse> findPlanetById(Integer id) {
-        return planetIntegration.findPlanetById(id);
+    public Mono<PlanetResponse> findPlanetByUrl(String url) {
+        return planetIntegration.findPlanetByUrl(url);
     }
 }

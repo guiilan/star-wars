@@ -13,4 +13,8 @@ public class PeopleResponse {
     private String mass;
     @JsonProperty(value = "birth_year")
     private String birthYear;
+    private String height;
+    private String gender;
+    @JsonProperty(value = "homeworld")
+    private String homeWorld;
 }

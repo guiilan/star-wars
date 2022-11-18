@@ -8,7 +8,7 @@ import reactor.core.publisher.Mono;
 
 @Service
 @AllArgsConstructor
-public class PeopleImplFacede {
+public class PeopleImplFacade {
 
     private final PeopleService peopleService;
 

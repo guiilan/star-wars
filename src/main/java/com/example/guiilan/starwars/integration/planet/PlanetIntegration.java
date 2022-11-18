@@ -12,13 +12,13 @@ public class PlanetIntegration {
     private final WebClient webClient;
 
     public PlanetIntegration(WebClient.Builder builder) {
-        webClient = builder.baseUrl("https://swapi.dev/api/").build();
+        webClient = builder.build();
     }
 
-    public Mono<PlanetResponse> findPlanetById(Integer id) {
+    public Mono<PlanetResponse> findPlanetByUrl(String url) {
         return webClient
                 .get()
-                .uri("planets/" + id)
+                .uri(url)
                 .accept(MediaType.APPLICATION_JSON)
                 .retrieve()
                 .bodyToMono(PlanetResponse.class)

@@ -8,12 +8,12 @@ import reactor.core.publisher.Mono;
 
 @Service
 @AllArgsConstructor
-public class PlanetImplFacede {
+public class PlanetImplFacade {
 
     private final PlanetService planetService;
 
-    public Mono<PlanetResponse> findPlanetById(Integer id) {
-        return planetService.findPlanetById(id);
+    public Mono<PlanetResponse> findPlanetByUrl(String url) {
+        return planetService.findPlanetByUrl(url);
     }
 }
 
