@@ -5,6 +5,8 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.ArrayList;
+
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
@@ -17,4 +19,5 @@ public class PeopleResponse {
     private String gender;
     @JsonProperty(value = "homeworld")
     private String homeWorld;
+    private ArrayList<String> species;
 }

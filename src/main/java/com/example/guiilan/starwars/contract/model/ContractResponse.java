@@ -1,5 +1,5 @@
 package com.example.guiilan.starwars.contract.model;
-
+import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.*;
 
 
@@ -7,6 +7,7 @@ import lombok.*;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
+@JsonInclude(JsonInclude.Include.NON_NULL)
 public class ContractResponse {
     private String name;
     private String birthYear;
@@ -14,4 +15,5 @@ public class ContractResponse {
     private String height;
     private String mass;
     private PlanetContractResponse planet;
+    private SpecieContractResponse specie;
 }
