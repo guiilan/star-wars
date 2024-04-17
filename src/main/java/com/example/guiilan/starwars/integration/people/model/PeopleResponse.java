@@ -6,6 +6,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.util.ArrayList;
+import java.util.List;
 
 @Data
 @NoArgsConstructor
@@ -20,4 +21,5 @@ public class PeopleResponse {
     @JsonProperty(value = "homeworld")
     private String homeWorld;
     private ArrayList<String> species;
+    private List<String> starships;
 }

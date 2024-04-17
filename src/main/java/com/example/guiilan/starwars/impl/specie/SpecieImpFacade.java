@@ -11,7 +11,7 @@ public class SpecieImpFacade {
 
     private final SpecieService specieService;
 
-    public Mono<SpecieResponse> findSpecieByUrl(String url){ return specieService.findSpecieByUrl(url); }
+    public  Mono<SpecieResponse> findSpecieByUrl(String url){ return specieService.findSpecieByUrl(url); }
 
 
 }
