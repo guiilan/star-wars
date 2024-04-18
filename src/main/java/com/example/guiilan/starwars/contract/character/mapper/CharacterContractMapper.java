@@ -1,6 +1,6 @@
-package com.example.guiilan.starwars.contract.mapper;
+package com.example.guiilan.starwars.contract.character.mapper;
 
-import com.example.guiilan.starwars.contract.model.ContractResponse;
+import com.example.guiilan.starwars.contract.character.model.CharacterContractResponse;
 import com.example.guiilan.starwars.integration.people.model.PeopleResponse;
 import com.example.guiilan.starwars.integration.planet.model.PlanetResponse;
 import com.example.guiilan.starwars.integration.specie.model.SpecieResponse;
@@ -11,16 +11,16 @@ import java.util.List;
 import java.util.Optional;
 
 @NoArgsConstructor(access = AccessLevel.PRIVATE)
-public class ContractMapper {
+public class CharacterContractMapper {
 
-    public static ContractResponse mapperToResult(
+    public static CharacterContractResponse mapperToResult(
             PeopleResponse people,
             PlanetResponse planet,
             SpecieResponse specie,
             List<StarshipResponse> starships
     ) {
         return Optional.ofNullable(people)
-                .map(result -> ContractResponse.builder()
+                .map(result -> CharacterContractResponse.builder()
                         .name(result.getName())
                         .mass(result.getMass())
                         .birthYear(result.getBirthYear())

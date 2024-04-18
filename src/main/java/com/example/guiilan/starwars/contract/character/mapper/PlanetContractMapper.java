@@ -1,6 +1,6 @@
-package com.example.guiilan.starwars.contract.mapper;
+package com.example.guiilan.starwars.contract.character.mapper;
 
-import com.example.guiilan.starwars.contract.model.PlanetContractResponse;
+import com.example.guiilan.starwars.contract.character.model.PlanetContractResponse;
 import com.example.guiilan.starwars.integration.planet.model.PlanetResponse;
 
 import java.util.Optional;

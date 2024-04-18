@@ -1,4 +1,4 @@
-package com.example.guiilan.starwars.contract.model;
+package com.example.guiilan.starwars.contract.character.model;
 
 import lombok.Builder;
 import lombok.Data;

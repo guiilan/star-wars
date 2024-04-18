@@ -1,8 +1,8 @@
-package com.example.guiilan.starwars.contract;
+package com.example.guiilan.starwars.contract.character;
 
-import com.example.guiilan.starwars.contract.model.ContractResponse;
+import com.example.guiilan.starwars.contract.character.mapper.CharacterContractMapper;
+import com.example.guiilan.starwars.contract.character.model.CharacterContractResponse;
 import com.example.guiilan.starwars.impl.people.PeopleImplFacade;
-import com.example.guiilan.starwars.contract.mapper.ContractMapper;
 import com.example.guiilan.starwars.impl.planet.PlanetImplFacade;
 import com.example.guiilan.starwars.impl.specie.SpecieImpFacade;
 import com.example.guiilan.starwars.impl.starship.StarshipImpFacede;
@@ -21,7 +21,7 @@ import java.util.List;
 
 @AllArgsConstructor
 @Service
-public class ContractFacade {
+public class CharacterContractFacade {
 
     private final PeopleImplFacade peopleImplFacade;
 
@@ -31,10 +31,10 @@ public class ContractFacade {
 
     private final StarshipImpFacede starshipImpFacede;
 
-    public Mono<ContractResponse> contractResult(Integer id) {
+    public Mono<CharacterContractResponse> contractResult(Integer id) {
         return peopleImplFacade.findPeopleById(id)
                 .flatMap(this::zippingContract)
-                .map(tuple -> ContractMapper.mapperToResult(tuple.getT1(),tuple.getT2(), tuple.getT3(), tuple.getT4()));
+                .map(tuple -> CharacterContractMapper.mapperToResult(tuple.getT1(),tuple.getT2(), tuple.getT3(), tuple.getT4()));
     }
 
     private Mono<Tuple4<PeopleResponse, PlanetResponse, SpecieResponse, List<StarshipResponse>>> zippingContract(PeopleResponse peopleResponse){

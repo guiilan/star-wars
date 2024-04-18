@@ -5,7 +5,6 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.util.ArrayList;
 import java.util.List;
 
 @Data
@@ -20,6 +19,6 @@ public class PeopleResponse {
     private String gender;
     @JsonProperty(value = "homeworld")
     private String homeWorld;
-    private ArrayList<String> species;
+    private List<String> species;
     private List<String> starships;
 }

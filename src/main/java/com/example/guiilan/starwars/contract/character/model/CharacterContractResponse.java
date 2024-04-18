@@ -1,4 +1,4 @@
-package com.example.guiilan.starwars.contract.model;
+package com.example.guiilan.starwars.contract.character.model;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.*;
 
@@ -10,7 +10,7 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 @JsonInclude(JsonInclude.Include.NON_EMPTY)
-public class ContractResponse {
+public class CharacterContractResponse {
     private String name;
     private String birthYear;
     private String gender;
