@@ -1,6 +1,6 @@
 package com.example.guiilan.starwars.contract.character;
 
-import com.example.guiilan.starwars.contract.character.model.CharacterContractResponse;
+import com.example.guiilan.starwars.contract.model.CharacterContractResponse;
 import lombok.AllArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;

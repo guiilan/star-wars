@@ -1,12 +1,15 @@
-package com.example.guiilan.starwars.contract.character.mapper;
+package com.example.guiilan.starwars.contract.mapper;
 
-import com.example.guiilan.starwars.contract.character.model.StarshipContractResponse;
+import com.example.guiilan.starwars.contract.model.StarshipContractResponse;
 import com.example.guiilan.starwars.integration.starship.model.StarshipResponse;
+import lombok.AccessLevel;
+import lombok.NoArgsConstructor;
 
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
 
+@NoArgsConstructor(access = AccessLevel.PRIVATE)
 public class StarshipContractMapper {
     public static List<StarshipContractResponse> mapStarships(List<StarshipResponse> starshipResponses) {
         return starshipResponses.stream()

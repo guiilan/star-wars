@@ -1,4 +1,4 @@
-package com.example.guiilan.starwars.contract.character.model;
+package com.example.guiilan.starwars.contract.model;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.AllArgsConstructor;

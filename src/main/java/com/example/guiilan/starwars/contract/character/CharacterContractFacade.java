@@ -1,7 +1,7 @@
 package com.example.guiilan.starwars.contract.character;
 
-import com.example.guiilan.starwars.contract.character.mapper.CharacterContractMapper;
-import com.example.guiilan.starwars.contract.character.model.CharacterContractResponse;
+import com.example.guiilan.starwars.contract.mapper.CharacterContractMapper;
+import com.example.guiilan.starwars.contract.model.CharacterContractResponse;
 import com.example.guiilan.starwars.impl.people.PeopleImplFacade;
 import com.example.guiilan.starwars.impl.planet.PlanetImplFacade;
 import com.example.guiilan.starwars.impl.specie.SpecieImpFacade;
