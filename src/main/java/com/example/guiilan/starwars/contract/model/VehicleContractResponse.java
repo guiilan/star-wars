@@ -1,6 +1,5 @@
-package com.example.guiilan.starwars.integration.starship.model;
+package com.example.guiilan.starwars.contract.model;
 
-import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -10,15 +9,16 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class StarshipResponse {
+public class VehicleContractResponse {
     private String name;
     private String model;
     private String manufacturer;
-    @JsonProperty(value = "cost_in_credits")
     private String costInCredits;
     private String length;
-    @JsonProperty(value = "max_atmosphering_speed")
     private String maxAtmospheringSpeed;
     private String crew;
     private String passengers;
+    private String cargoCapacity;
+    private String consumables;
+    private String vehicleClass;
 }

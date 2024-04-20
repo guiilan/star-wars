@@ -22,6 +22,6 @@ public class FilmContractResponse {
     private List<PlanetContractResponse> planets;
     private List<StarshipContractResponse> starships;
     private List<SpecieContractResponse> species;
-    private List<String> vehicles;
+    private List<VehicleContractResponse> vehicles;
 
 }
